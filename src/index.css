@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fff;
+  --surface: #f8fafc;
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --gold: #d4af37;
+  --blue: #0e4da4;
+  --orange: #ff6b35;
+}
+
+* { -webkit-font-smoothing: antialiased; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+h1, h2 {
+  font-family: 'Fraunces', 'Instrument Serif', Georgia, serif;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes pulseSoft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.animate-fadeIn { animation: fadeIn 0.45s ease; }
+.animate-scaleIn { animation: scaleIn 0.25s ease; }
+.animate-pulseSoft { animation: pulseSoft 2s cubic-bezier(.4,0,.6,1) infinite; }
