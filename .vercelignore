@@ -1,0 +1,14 @@
+# Lo que NO se sube a Vercel. Es independiente de .gitignore: sirve tanto para
+# despliegues por CLI como por Git, y evita subir ~84 MB que no hacen falta.
+node_modules
+dist
+.vercel
+.git
+
+# Respaldos: no los usa la web
+originales-video
+public/images/originales
+
+# Documentación y capturas de referencia
+docs
+*.md

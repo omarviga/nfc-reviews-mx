@@ -1,0 +1,19 @@
+# Dependencias — NUNCA versionar. Vercel las instala en Linux, que es donde
+# hacen falta los binarios correctos (aquí se generan los de Windows).
+node_modules/
+
+# Build
+dist/
+.vercel
+
+# Material original: son respaldos, la web usa las copias optimizadas de
+# public/images/<giro>/. Si se suben, engordan el repositorio y el despliegue.
+public/images/originales/
+originales-video/
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
